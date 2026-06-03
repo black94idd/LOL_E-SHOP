@@ -1,10 +1,10 @@
 <?php
 session_start();
-
-$host    = '127.0.0.1';
-$db      = 'eshop_lol';
-$user    = 'root';
-$pass    = ''; // 依照你的 XAMPP 設定
+$host    = 'mysql-3f2e0ffe-kevin87945-d1ea.h.aivencloud.com';
+$port    = '14933';
+$db      = 'defaultdb';
+$user    = 'avnadmin';
+$pass = getenv('DB_PASS');
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
